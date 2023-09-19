@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Title from './[title]';
+import Title from '../../../pages/films/[title]';
 import { useRouter } from 'next/router';
 
 // Mocking useRouter

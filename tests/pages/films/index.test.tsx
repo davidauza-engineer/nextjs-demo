@@ -1,5 +1,5 @@
 import { render, act, screen, waitFor } from '@testing-library/react';
-import FilmsHome from './index';
+import FilmsHome from '../../../pages/films/index';
 import { useRouter } from 'next/router';
 
 // Mocking useRouter
