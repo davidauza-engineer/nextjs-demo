@@ -1,5 +1,4 @@
-'use client'
-
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
@@ -28,4 +27,15 @@ const Film = () => {
   );
 }
 
-export default Film;
+const FilmsHome = () => {
+  const router = useRouter();
+  useEffect(() => {
+    if (router.query.title) {
+      router.push(`/films/?title=${router.query.title}`);
+    }
+  }, [router.query.title]);
+
+  return <Film />;
+};
+
+export default FilmsHome;
