@@ -1,5 +1,5 @@
 type ParamsProps = {
-  name: string;
+  title: string;
 };
 
 type NameProps = {
@@ -7,7 +7,7 @@ type NameProps = {
 };
 
 const Title: React.FC<NameProps> = ({ params }) => {
-  const title = params.name;
+  const title = params.title;
   return <h1 className={'mt-5 ml-5'}>{decodeURI(title)} Details</h1>;
 };
 

@@ -5,7 +5,7 @@ describe('Title', () => {
 
   it('renders the title correctly', () => {
     const mockParams = {
-      name: 'Star%20Wars'
+      title: 'Star%20Wars'
     };
 
     render(<Title params={mockParams} />);
@@ -16,7 +16,7 @@ describe('Title', () => {
 
   it('renders correctly with different title', () => {
     const mockParams = {
-      name: 'The%20Phantom%20Menace'
+      title: 'The%20Phantom%20Menace'
     };
 
     render(<Title params={mockParams} />);
