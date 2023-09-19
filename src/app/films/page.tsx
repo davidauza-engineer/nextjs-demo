@@ -10,7 +10,6 @@ const Film = () => {
     fetch('https://swapi.dev/api/films')
       .then(response => response.json())
       .then(data => setFilms(data.results));
-    console.log('oa');
   }, []);
 
   return (
